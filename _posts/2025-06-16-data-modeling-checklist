@@ -1,0 +1,34 @@
+---
+title: "Data Modeling Checklist"
+date: 2025-06-16
+---
+
+# The Data-Modeling Checklist
+Love and dating interests me. I want to know more about the struggles that men and women face today when pursuing love. Collecting data and organizing it poses a problem. Because first, I have to discover what am I looking for. I can't just go out into the world and collect data, I have to rely on what I am learning in my masters program at Westerns Govenors University's data science program. One of the first ideas established is the organizing data to reduce redundancy. WGU taught me to start with modeling the data and then building a database. In the midst of my studies, I discovered a data modeling checklist. The checklist comes from the eTextbook titled, "Database Systems: Design, Implementation, and Management." I admit I nerded out and read it from cover to cover.
+
+## Business Rules
+First identify the business rules. Business rules are the policies, procedures, principles that guide the organization. Good business rules are short and sweet and actionable. After identifying that business rule, I'll understand the nature and scope of my data so that I can build appropriate relationship rules and onstraints around the data. This leads to the proper identification of entities, attributes, relationships, and constraints. The verbs in a business rule translates into relationships among the entities. For example, men buy women dinner on a first date. From this business rule, I can conclude that
+* Men, women, money, are entities, objects of interest.
+* There is a "buy" relationship between men and money on the first date.
+
+This business rule exists widely across America even though individuals may feel frustrated by the rule or do not practice it. Humans break rules, I know that, obviously. However, knowing the business rule, I can focus my research on data exploring the dollars spent by on the first date. Then I can start diving into whether the data promotes the business rules, goes against the business rules, or shows the inefficiencies of the business rule. 
+
+### Document the business rules
+Identify as many business rules and document them. 
+
+## Entities
+An **entity** is a nount that is meaningful to the business. No bruh or dude for man, or bad bitch for woman. Such common slang terms for a man or women are great to track. The entities are unique within the models, representing a single shubject. I find it great to track abrreviations, aliases, and synonyms because it may prove useful for coming up with common vocabulary. Thankfully, while I have many flaws, I am able to manage not using synonyms in the databases that I am working on alone. 
+
+###Mini-checklist for entities
+* Names are meaningful nouns
+* They are unique within the model
+* Composite entities (
+
+## Attributes
+* **Attribues:** are the entities' descriptive characterics that use the entity abbreviation as a prefix. Primary Key suffixes should include _ID, _NUM, _CODE. Attributes are simple and atomic. Avoid redundancies unless it is required for transaction accuracy, performance, and historical data. 
+
+## Relationships
+* **Relationship:** names are active and passive verbs that indicate the nature of the relationship. It should clearly identify the partificants, the connectivity, and the cardinality. 
+
+##ER Model
+
