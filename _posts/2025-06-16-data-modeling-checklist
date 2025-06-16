@@ -22,13 +22,29 @@ An **entity** is a nount that is meaningful to the business. No bruh or dude for
 ###Mini-checklist for entities
 * Names are meaningful nouns
 * They are unique within the model
-* Composite entities (
+* Composite entities include the abbreviated names of the entities linked through the composite. 
+* * Composite entities model many-to-many relationships. Such as a student at a university enrolling into many courses and courses have manying studenties. The entities related to the compsite entity Enrollments() may originate from Students(student_id,name) and Courses(course_id, title, department). Enrollemnts(student_id, course_id, enrollment_date, grade) is then born to loving parents, a product of the many-to-many relationships.  
+* They are not redundant
+* Nonkey attributes fully depend on the Primary Key (PK)
 
 ## Attributes
-* **Attribues:** are the entities' descriptive characterics that use the entity abbreviation as a prefix. Primary Key suffixes should include _ID, _NUM, _CODE. Attributes are simple and atomic. Avoid redundancies unless it is required for transaction accuracy, performance, and historical data. 
+* **Attribues** are the entities' descriptive characterics that use the entity abbreviation as a prefix. 
+
+### Mini-checklist for attribues
+* They are unique within the entity
+* They are simple and atomic so that they cannot be further broken down. Name is not atomic because it can be simplified to first, middle, and last name.   
+* Primary Key suffixes should include _ID, _NUM, _CODE.  
+* No special characters
+
 
 ## Relationships
-* **Relationship:** names are active and passive verbs that indicate the nature of the relationship. It should clearly identify the partificants, the connectivity, and the cardinality. 
+**Relationship** names are active and passive verbs that indicate the nature of the relationship. Strong relationships are normalized to reduce redundancies and eliminate data anomalies. Normalization follows three stages: first (1NF), second (2NF), and third (3NF) normal form. I do recognize that sometimes redundancy is necessary, so reaching 3NF is not always the goal. That depends on my business rules, and how much I want to join or search tables. At the very least, my goal in normalization is to eliminate multivalued attributes, define functional depndendies, and create a user-friendly design that is fast and operational. 
+
+### Mini-checklist for relationships
+* Clearly identify the partificants, the connectivity, and the cardinality. 
+* Represents a set of distinguishable entity instances. 
+* Conforms to 3NF standards unless a higher calling deems this unjustifiable. 
+* PKs are clearly defined and support data granularity. 
 
 ##ER Model
-
+**Entity-Relationship Models** are visually represent how the data is structurally organized in order to solve a business problem. The ER is a culmination of facts and dimensions. The facts can be measurments or aggregations like dollar spent, location. Dimensions provide the context such as year, date category (outdoor adventure, restaurant, artistic event). The ER model details the relationships between entities, serving as a map for the construction of the data. It has entities, attributes, relationship, primary keys, and foreign keys. 
