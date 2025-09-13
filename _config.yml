@@ -3,8 +3,8 @@ title: "life and love in data"
 description: "this is where i share cool stuff about data"
 author: "lorraine a. wheat"
 email: rainewheat@gmail.com
-url: "https://yourusername.github.io"   # replace with your GitHub Pages URL
-baseurl: ""  # leave empty unless your repo has a project subpath
+url: "https://lawwrites.github.io"   # replace with your GitHub Pages URL
+baseurl: "/lorraine-a-wheat-intro-to-data-science"  # leave empty unless your repo has a project subpath
 
 # Build settings
 theme: minima
@@ -41,3 +41,4 @@ footer:
       url: /about/
     - title: "Contact"
       url: /contact/
+
