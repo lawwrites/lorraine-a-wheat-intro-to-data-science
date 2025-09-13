@@ -1,4 +1,43 @@
+# Site settings
+title: "life and love in data"
+description: "this is where i share cool stuff about data"
+author: "lorraine a. wheat"
+email: rainewheat@gmail.com
+url: "https://yourusername.github.io"   # replace with your GitHub Pages URL
+baseurl: ""  # leave empty unless your repo has a project subpath
+
+# Build settings
 theme: minima
-title: life and love in data
-description: this is where i share cool stuff about data
-author: lorraine a. wheat
+
+# Social links (these show up in the sidebar/footer in minima)
+minima:
+  social_links:
+    github: lawwrites
+    linkedin: https://www.linkedin.com/in/lorrainewheat
+    instagram: lawwrites
+    rss: true
+
+# Show excerpts on the home page
+show_excerpts: true
+
+# Markdown & syntax highlighting
+markdown: kramdown
+highlighter: rouge
+
+# Plugins (optional but common)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Pagination (if you want blog-style navigation)
+paginate: 5
+paginate_path: "/page:num/"
+
+# Footer settings
+footer:
+  links:
+    - title: "About"
+      url: /about/
+    - title: "Contact"
+      url: /contact/
